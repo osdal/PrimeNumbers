@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+
+	<script>
+		let begin = null,
+			end = null
+			primeNumbers = [];
+
+			begin = prompt('Введите начальное число');
+			end = prompt('Введите конечное число');
+			begin = +begin;
+			end = +end;
+			
+			for (let i = begin; i < end; i++) {
+				for (let k = 0; k < i; k++) {
+						if (i%k == 0) {
+							break;
+						} else primeNumbers.push(i);
+					}
+			}
+			console.log(primeNumbers);
+	</script>
+</body>
+</html>
