@@ -18,13 +18,19 @@
 			end = +end;
 			
 			for (let i = begin; i < end; i++) {
-				for (let k = 0; k < i; k++) {
+				for (let k = 2; k = i; k++) {
 						if (i%k == 0) {
 							break;
-						} else primeNumbers.push(i);
+						} else if (k == i) {
+							primeNumbers.push(i);
+						}
 					}
 			}
-			console.log(primeNumbers);
+
+console.log(primeNumbers.length);
+			for (let m = 0; m < primeNumbers.length; m++) {
+						console.log(primeNumbers[m]);
+					}
 	</script>
 </body>
 </html>
