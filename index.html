@@ -16,6 +16,10 @@
 			end = prompt('Введите конечное число');
 			begin = +begin;
 			end = +end;
+
+			for (let i = begin; i < end; i++) {
+				primeNumbers.push(i);
+			}
 			
 			for (let i = begin; i < end; i++) {
 				for (let k = 2; k = i; k++) {
@@ -27,7 +31,7 @@
 					}
 			}
 
-console.log(primeNumbers.length);
+console.log(primeNumbers);
 			for (let m = 0; m < primeNumbers.length; m++) {
 						console.log(primeNumbers[m]);
 					}
