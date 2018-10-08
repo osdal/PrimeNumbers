@@ -17,12 +17,12 @@
 			begin = +begin;
 			end = +end;
 
-			for (let i = begin; i < end; i++) {
-				primeNumbers.push(i);
-			}
-			
-			for (let i = begin; i < end; i++) {
-				for (let k = 2; k = i; k++) {
+			// for (let i = begin; i <= end; i++) {
+			// 	primeNumbers.push(i);
+			// }
+			let kend = Math.ceil(i/2);
+			for (let i = begin; i <= end; i++) {
+				for (let k = 2; k = kend; k++) {
 						if (i%k == 0) {
 							break;
 						} else if (k == i) {
@@ -31,7 +31,7 @@
 					}
 			}
 
-console.log(primeNumbers);
+// console.log(primeNumbers);
 			for (let m = 0; m < primeNumbers.length; m++) {
 						console.log(primeNumbers[m]);
 					}
