@@ -21,22 +21,29 @@
 			// 	primeNumbers.push(i);
 			// }
 			
-			
-			for (let i = begin; i <= end; i++) {
-				let kend = Math.ceil(i/2);
-				
-				for (let k = 2; k = 4; k++) {
-						console.log(k)
-						/*if (i%k == 0) {
+			for (var i=begin; i<=end; i++){
+    for(var j=2; j<=i; j++){
+        if (i%j == 0) break;
+    }
+    if(j==i) primeNumbers.push(i);
 
+}
+ console.log(primeNumbers);
+
+			/*for (let i = begin; i <= end; i++) {
+				// let kend = Math.ceil(i/2);
+				
+				for (let k = 2; k <= i; k++) {
+						if(i%k == 0) {
 							break;
-						} else if (k == kend) {
-							primeNumbers.push(i);
-						}*/
+						}
+					}
+					if(k == i) {
+						primeNumbers.push(i);
 					}
 			}
 
-// console.log(primeNumbers);
+console.log(primeNumbers);*/
 			/*for (let m = 0; m < primeNumbers.length; m++) {
 						console.log(primeNumbers[m]);
 					}*/
